@@ -237,6 +237,12 @@ padding: 16px 32px;
     margin-bottom: 48px;
 }
 }
+@media (min-resolution: 192dpi), 
+       (min-resolution: 2dppx) {
+  .section {
+    background-image: url(../images/people-office@2x.jpg);
+  }
+}
 }
 
 /* section p2 */
