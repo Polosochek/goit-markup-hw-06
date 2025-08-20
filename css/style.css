@@ -232,8 +232,9 @@ padding: 16px 32px;
 .but:focus{
     background-color:#404BBF;
 }
+
 @media 
-       (min-resolution: 2dppx) {
+       (min-resolution: 2dppx) and (max-width:1158px){
   .section {
     background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office@2x.jpg);
   }
