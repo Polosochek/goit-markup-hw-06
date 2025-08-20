@@ -242,15 +242,17 @@ padding: 16px 32px;
 @media screen and (min-width:768px){
     .section .container{
     max-width: none;
+    }
 .zag{
     font-size: 56px;
-}
-}
-}
-.zag{
     margin-bottom: 36px;
 }
+}
 @media screen and (min-width:1158px){
+    .section{
+           padding: 188px 0;
+
+    }
 .zag{
     margin-bottom: 48px;
 }
