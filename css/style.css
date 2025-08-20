@@ -158,7 +158,11 @@ border-radius: 2px;
 
 
 @media screen and (min-width:1158px){
-   .container{
+      .ul-address-header li:first-child{
+    margin-bottom: 0;
+   }
+   
+    .container{
     margin: 0 auto;
    }
 .header-m .logo{
@@ -177,7 +181,7 @@ margin-right: 76px;
 }
 /* section */
 .section{
-   padding: 188px 0;
+   padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
@@ -186,7 +190,9 @@ margin-right: 76px;
     margin: 0 auto;
 
 }
-
+.section .container{
+    max-width: 216px;
+}
 
 .zag{
     text-align: center;
@@ -226,22 +232,26 @@ padding: 16px 32px;
 .but:focus{
     background-color:#404BBF;
 }
-@media screen and (min-width:768px){
-.zag{
-    font-size: 56px;
-    margin-bottom: 36px;
-
-}
-@media screen and (min-width:1158px){
-.zag{
-    margin-bottom: 48px;
-}
-}
-@media (min-resolution: 192dpi), 
+@media 
        (min-resolution: 2dppx) {
   .section {
     background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office@2x.jpg);
   }
+}
+@media screen and (min-width:768px){
+    .section .container{
+    max-width: none;
+.zag{
+    font-size: 56px;
+}
+}
+}
+.zag{
+    margin-bottom: 36px;
+}
+@media screen and (min-width:1158px){
+.zag{
+    margin-bottom: 48px;
 }
 }
 
@@ -285,7 +295,7 @@ font-weight: 500;
 .section_two_ul{
       display: grid;
   grid-template-columns: repeat(2, 1fr); 
-  gap: 24px;
+  gap: 72px 24px;
   list-style: none; 
   padding: 0;
 }
@@ -294,12 +304,14 @@ font-weight: 500;
 }
 .section_two_ul_li{
     margin: 0;
-    margin-bottom:72px;
+        margin-bottom: 0;
 }
 
 }
 @media screen and (min-width:1158px){
+    
 .section_two{
+    padding: 120px 0;
 margin: 0 auto;
 }
 .section-two-icons{
@@ -328,6 +340,7 @@ margin-bottom: 8px;
     color: #2e2f42;
 }
 .paragraf{
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -339,7 +352,7 @@ margin-bottom: 8px;
 
 .section-t{
     background-color: #F4F4FD;
-padding-bottom: 96px;
+padding: 96px 0;
 }
 .zag-t{
     font-size: 36px;
@@ -349,7 +362,6 @@ padding-bottom: 96px;
     text-transform: capitalize;
     color: #2e2f42 ;
 margin-bottom: 72px;
-padding-top: 96px;
 }
 .lithr{
   border-radius: 0 0 4px 4px;
@@ -357,7 +369,6 @@ padding-top: 96px;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 max-width: 264px;
 margin: 0 auto;
-max-height: 428px;
 margin-top: 72px;
 }
 .lithr:first-child{
@@ -509,10 +520,6 @@ gap: 64px 24px;
     margin-bottom: 0;
 }
 
-.section-f .container{
-    padding: 0;
-}
-
 @media screen and (min-width:768px){
     .section-f-ul-li{
     margin-bottom: 0;
@@ -529,7 +536,9 @@ gap: 48px 24px;
 
 }
 @media screen and (min-width:1158px){
-
+.section-f{
+    padding: 120px 0;
+}
     .section-f-ul{
         display: flex;
     }
@@ -726,11 +735,11 @@ margin-left: 16px;
 }
 @media screen and (min-width:768px){
     .footer .container{
-        padding: 0;
-        max-width: 496px;
+        
+        max-width: 584px;
     }
 .footer{
-    padding: 96px 108px;
+    padding: 96px 0;
 }
 .foot-social-media{
     margin: 0;
@@ -747,6 +756,9 @@ margin-left: 16px;
 .foot-form-container{
     text-align:start;
 }
+.foot-form-input{
+    width: 264px;
+}
 }
 @media screen and (min-width:1158px){
     .footer .container{
@@ -761,9 +773,7 @@ max-width: max-content;
     margin-bottom: 0;
     margin-right: 0;
  }
-.foot-form-input{
-    max-width: 264px;
-}
+
 .f-social-media-list-links:hover{
     background-color: #31d0aa;
 }
@@ -815,7 +825,7 @@ font-size: 36px;
 line-height: 1.11111;
 letter-spacing: 0.02em;
 color: #404bbf;
-    padding-top: 40px;
+    margin-top: 40px;
 }
 
 .mobile-menu-list {
@@ -826,7 +836,7 @@ color: #404bbf;
   color: #2e2f42;
 }
 .mobile-menu-mlist li:first-child {
-  padding-top: 0;
+  margin-top: 0;
 
 }
 .mobile-menu-mlist li:first-child a {
@@ -867,6 +877,7 @@ color: #404bbf;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
+  font-style: normal;
 }
 
 .mobile-menu-addres-ul li:first-child a {
@@ -904,7 +915,7 @@ pointer-events: all;
     box-shadow:0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-padding: 72px 24px 24px 24px;
+padding: 72px 16px 24px 16px;
 background-color: #fcfcfc;
 max-width: 420px;
 
@@ -1097,6 +1108,8 @@ margin-right: 8px;
 
 @media screen and (min-width:768px){
 .modal-window-content{
+    padding: 72px 24px 24px 24px;
+
         width: 408px;
         min-height: 584px;
 }
