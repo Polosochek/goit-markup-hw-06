@@ -810,6 +810,11 @@ max-width: max-content;
     padding-left: 16px;
 }
 .mobile-menu-mlist li{
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.11111;
+letter-spacing: 0.02em;
+color: #404bbf;
     padding-top: 40px;
 }
 
@@ -852,7 +857,7 @@ max-width: max-content;
   margin-bottom: 40px;
 }
 
-.mobile-menu-addres-ul li {
+.mobile-menu-addres-ul li:first-child {
   margin-bottom: 24px;
 }
 
@@ -870,7 +875,7 @@ max-width: max-content;
 
 .mobile-contact-box .f-social-media {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   padding-top: 48px;
 }
 
